@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahi's Portfolio</title>
+  <link rel="stylesheet" href="task4.css" />
+</head>
+
+<body>
+
+  <nav id="desktop-nav">
+    <div class="logo">Mahlet Samuel</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#experience">Experience</a></li>
+      
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <nav id="hamburger-nav">
+    <div class="logo">Mahlet Samuel</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./images/profile.jpg" alt="Mahlet Samuel profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Mahlet Samuel</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./Mahlet Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./images/linkedin.png" alt="LinkedIn Profile" class="icon" onclick="location.href='https://www.linkedin.com/in/mahlet-samuel-b1a395231/'" />
+        <img src="./images/github (1).png" alt="Github Profile" class="icon" onclick="location.href='https://github.com/mahletsamuel'" />
+      </div>
+    </div>
+  </section>
+
+ 
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./images/experience.png" alt="Experience Icon" class="icon" />
+            <h3>Experience</h3>
+            <p>2+ years <br />Frontend Development</p>
+          </div>
+          <div class="details-container">
+            <img src="./images/education.png" alt="Education Icon" class="icon" />
+            <h3>Education</h3>
+            <p>B.Sc. in Software Engineering</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am a passionate software engineer with a strong foundation in web development, problem-solving, and collaborative projects. I have worked on a variety of academic and open-source initiatives, including the successful development of Travel Wave, a ride-sharing app, for my final year project. I am proficient in JavaScript, front-end design, and have experience creating interactive and visually appealing web applications. I am also actively involved in community leadership and media literacy initiatives, leveraging my technical skills to drive positive social change. I continuously strive to expand my expertise and contribute to impactful projects that blend technology and innovation.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#experience'" />
+  </section>
+
+ 
+  <section id="experience">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container">
+          <h2 class="experience-sub-title">Frontend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>HTML</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>CSS</h3>
+                <p>Experienced</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>JavaScript</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>UI/UX</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+          </div>
+        </div>
+
+        <div class="details-container">
+          <h2 class="experience-sub-title">Backend Development</h2>
+          <div class="article-container">
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>React.js</h3>
+                <p>Basic</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Node.js</h3>
+                <p>Intermediate</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>Express.js</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+            <article>
+              <img src="./images/checkmark.png" alt="Experience icon" class="icon" />
+              <div>
+                <h3>MongoDB</h3>
+                <p>Basics</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./images/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='#projects'" />
+  </section>
+
+ 
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./images/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:mahletsamueldon@gmail.com">mahletsamueldon@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./images/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/mahlet-samuel-b1a395231/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+       
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <p>Copyright &#169; 2024 Mahlet Samuel. All Rights Reserved.</p>
+  </footer>
+
+  <script src="task4.js"></script>
+</body>
+</html>
